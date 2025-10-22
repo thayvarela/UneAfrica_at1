@@ -1,0 +1,26 @@
+:root{
+  --bg: #fff8f2;
+  --primary: #b85c1b;
+  --accent: #f1c40f;
+  --muted: #6b4a3a;
+  --container: 1100px;
+}
+
+*{box-sizing:border-box}
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto; margin:0; color:var(--muted); background:var(--bg)}
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+.site-header{background:#fff;padding:0.6rem 0;border-bottom:1px solid #f0e6df}
+.brand .logo{font-weight:800;font-size:1.6rem;color:var(--primary)}
+.brand .logo span{color:var(--accent)}
+.main-nav{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.main-nav a{text-decoration:none;color:var(--muted)}
+.hero{position:relative}
+.hero-img{width:100%;height:auto;display:block;object-fit:cover}
+.hero .lead{font-size:1.1rem;margin-top:0.5rem}
+.cards{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+.card img{width:100%;height:auto;border-radius:6px}
+.form-page .form-wrap{display:grid;grid-template-columns:1fr 320px;gap:1rem}
+form{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.help img{width:100%;height:auto;border-radius:6px}
+.btn{background:var(--primary);color:#fff;padding:0.5rem 1rem;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
+@media(max-width:900px){.form-page .form-wrap{grid-template-columns:1fr}}

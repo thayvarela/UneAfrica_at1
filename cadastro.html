@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro — UNEAfrica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><div class="logo">Une<span>África</span></div></div>
+      <nav aria-label="menu principal">
+        <ul class="main-nav">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container form-page">
+    <h1>Cadastre-se</h1>
+    <div class="form-wrap">
+      <form id="cadastroForm" action="#" method="post" novalidate>
+        <fieldset><legend>Dados Pessoais</legend>
+          <label for="nome">Nome completo *</label>
+          <input id="nome" name="nome" type="text" required>
+
+          <label for="email">E-mail *</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="cpf">CPF *</label>
+          <input id="cpf" name="cpf" type="text" maxlength="14" required>
+
+          <label for="telefone">Telefone *</label>
+          <input id="telefone" name="telefone" type="tel" required>
+
+          <label for="nascimento">Data de nascimento *</label>
+          <input id="nascimento" name="nascimento" type="date" required>
+        </fieldset>
+
+        <fieldset><legend>Endereço</legend>
+          <label for="cep">CEP</label>
+          <input id="cep" name="cep" type="text">
+
+          <label for="cidade">Cidade</label>
+          <input id="cidade" name="cidade" type="text">
+
+          <label for="estado">Estado</label>
+          <input id="estado" name="estado" type="text">
+        </fieldset>
+
+        <fieldset><legend>Interesses</legend>
+          <label for="area">Área</label>
+          <select id="area" name="area">
+            <option value="">-- selecione --</option>
+            <option>Saúde</option>
+            <option>Educação</option>
+            <option>Logística</option>
+          </select>
+
+          <label for="experiencia">Experiência</label>
+          <textarea id="experiencia" name="experiencia"></textarea>
+
+          <label><input type="checkbox" id="termos" required> Aceito os termos</label>
+        </fieldset>
+
+        <p class="actions"><button class="btn" type="submit">Enviar</button></p>
+      </form>
+      <aside class="help">
+        <img src="images/cadastre_support_800x600.jpg" alt="Mãos unidas simbolizando apoio" width="800" height="600">
+        <p>Precisa de ajuda? contato@uneafrica.org</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">UNEAfrica © 2025 Felix </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
